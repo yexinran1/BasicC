@@ -48,9 +48,9 @@ int main()
     printf("字符串地址：%p\n", &("zhangsan"));
     ptr2 = "zhangsan";
 #else
-    strcpy(ptr2, "zhangsan");
+    strcpy(ptr2, "zhangsan");   
+#endif
     printf("ptr2地址:%p\n", ptr2);
     printf("ptr2:%s\n", ptr2);
-#endif
     return 0;
 }
