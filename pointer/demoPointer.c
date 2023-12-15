@@ -13,7 +13,7 @@ int main()
 #endif
 
 
-#if 0
+#if 1
     /* 指针的使用： 指针内存存放的是某变量的地址 */
     /* *p就是解引用(读写数据) */
     int a = 5;
@@ -92,8 +92,10 @@ int main()
 
 /* 堆空间 */
 /* void * 是一个万能指针 */
+#if 0
     char *ptr = (char *) malloc(sizeof(char) * BUFFER_SIZE);
     strcpy(ptr, "zhangsan");
     printf("%s\n", ptr);
+#endif
     return 0;
 }
